@@ -4,10 +4,156 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
     <title>Mac-book Store</title>
   </head>
   <body>
-    <h1></h1>
+    <main class="container">
+      <article class="row mt-4">
+        <!-- Mac-Book Images  -->
+        <section class="col-6">
+          <div>
+            <img class="img-fluid" src="images/mac.png" alt="" />
+          </div>
+        </section>
+        <!-- Configurations  -->
+        <section class="col-6">
+          <div class="mb-4">
+            <h1>Customize your Blue 24-inch iMac with Apple M1 Chip.</h1>
+            <p>
+              M1 features an 8-core CPU consisting of four high-performance
+              cores and four high-efficiency cores. Each of the high-performance
+              cores provides industry-leading performance for single-threaded
+              tasks, while running as efficiently as possible. They are the
+              world’s fastest CPU cores in low-power silicon, allowing
+              photographers to edit high-resolution photos with lightning speed
+              and developers to build apps nearly 3x faster than before. And all
+              four can be used together for a huge boost in multithreaded
+              performance.
+            </p>
+          </div>
+          <!-- Memory  -->
+          <div class="mb-4">
+            <strong>Memory</strong> <br />
+            <button
+              id="memory-8"
+              type="button"
+              class="btn btn-outline-secondary btn"
+            >
+              8GB unified memory
+            </button>
+            <button
+              id="memory-16"
+              type="button"
+              class="btn btn-outline-secondary btn"
+            >
+              16GB unified memory
+            </button>
+            <br />
+          </div>
+
+          <!-- Storage -->
+          <div class="mb-4">
+            <strong>Storage</strong> <br />
+            <button
+              id="storage-256"
+              type="button"
+              class="btn btn-outline-secondary btn"
+            >
+              256GB SSD storage
+            </button>
+            <button
+              id="storage-512"
+              type="button"
+              class="btn btn-outline-secondary btn"
+            >
+              512GB SSD storage
+            </button>
+            <button
+              id="storage-1TB"
+              type="button"
+              class="btn btn-outline-secondary btn"
+            >
+              1TB SSD storage
+            </button>
+            <br />
+          </div>
+
+          <!-- Choose Your Delivery Option  -->
+          <div class="mb-4">
+            <strong>Choose Your Delivery Option</strong> <br />
+            <button
+              id="delivery-free"
+              type="button"
+              class="btn btn-outline-secondary btn"
+            >
+              Friday, Aug 25 FREE Prime Delivery
+            </button>
+            <button
+              id="delivery-not-free"
+              type="button"
+              class="btn btn-outline-secondary btn"
+            >
+              Friday, Aug 21 Delivery Charges $20
+            </button>
+            <br />
+          </div>
+          <!-- Pc Build Price  -->
+          <div class="col-6">
+            <table class="table">
+              <thead></thead>
+              <tbody>
+                <tr>
+                  <th scope="col">Best Price</th>
+                  <th id="best-price" class="text-center" scope="col">
+                    $<span>1299</span>
+                  </th>
+                </tr>
+                <tr>
+                  <th scope="row">Extra Memory Cost</th>
+                  <th class="text-center">$<span id="extra-memory">0</span></th>
+                </tr>
+                <tr>
+                  <th scope="row">Extra Storage Cost</th>
+                  <th class="text-center">
+                    $<span id="extra-storage">0</span>
+                  </th>
+                </tr>
+                <tr>
+                  <th scope="row">Delivery Charges</th>
+                  <th class="text-center" colspan="2">
+                    $<span id="delivery-charges">0</span>
+                  </th>
+                </tr>
+              </tbody>
+              <thead>
+                <tr>
+                  <th scope="col">Total Price</th>
+                  <th class="text-center" scope="col">
+                    $<span id="total-price">1299</span>
+                  </th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <!-- Add promo Code  -->
+
+          <div class="col-6 d-flex mb-4">
+            <input id="promo-input" class="form-control" type="text" name="" />
+            <button class="btn btn-danger" id="promo-button">Apply</button>
+          </div>
+        </section>
+        <hr />
+        <div class="text-center">
+          <h1>Total: $<span id="total">1299</span></h1>
+        </div>
+      </article>
+    </main>
 
     <script src="js/app.js"></script>
   </body>
